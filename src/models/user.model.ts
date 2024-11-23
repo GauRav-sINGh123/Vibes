@@ -1,15 +1,15 @@
-import {Model, Schema, model, models} from "mongoose";
+import { Schema, model, models} from "mongoose";
 
-export interface User extends Document{
-    clerkId:string,
-    email:string,
-    username:string,
-    firstName:string,
-    lastName:string,
-    image:string
-}
+// export interface User extends Document{
+//     clerkId:string,
+//     email:string,
+//     username:string,
+//     firstName:string,
+//     lastName:string,
+//     image:string
+// }
 
-const userSchema:Schema<User>=new Schema({
+const userSchema=new Schema({
     clerkId:{
         type:String,
         required:true
@@ -36,6 +36,6 @@ const userSchema:Schema<User>=new Schema({
     }
 })
 
-const User=(models.User as Model<User>) || model<User>('User',userSchema)
+const User=models.User || model('User',userSchema)
 
 export default User
