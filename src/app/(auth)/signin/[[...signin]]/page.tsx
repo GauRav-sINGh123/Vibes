@@ -3,7 +3,7 @@ import { SignIn } from '@clerk/nextjs'
 export default function Page() {
   return(
     <div>
-       <SignIn fallbackRedirectUrl="/dashboard"  />
+       <SignIn fallbackRedirectUrl="/"  />
     </div>
   )
 }
