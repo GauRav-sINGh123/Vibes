@@ -78,9 +78,11 @@ export default function Navbar() {
             <Link href="/contact" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
               Contact
             </Link>
-            <button className="bg-blue-500 text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600">
+           <Link href={'/signin'}>
+           <button className="bg-blue-500 text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600">
               Login
             </button>
+           </Link>
           </div>
         </div>
       )}
