@@ -8,7 +8,7 @@ export default function HomeLayout({
     return (
      <div className="flex h-screen flex-col ">
         <Navbar/>
-      <div className=" p-16">
+      <div  >
       {children}
       </div>
      </div>
